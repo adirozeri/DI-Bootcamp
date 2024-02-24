@@ -1,0 +1,123 @@
+* {
+    /* border: 1px solid white; */
+    color: white;
+
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+
+}
+
+#main {
+    width: 50em;
+    margin: auto;
+}
+
+/* head*/
+
+#tribute-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+
+}
+
+#img-div {
+
+    /* align-items: center; */
+    /* position: relative; */
+
+    /* align-self: center; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /* width: fit-content; */
+}
+
+p#title {
+    top: 5%;
+    left: 25%;
+    font-weight: bolder;
+    font-family: "Cormorant";
+    position: absolute;
+    font-size: 5em;
+    color: black;
+
+}
+
+#image {
+    max-width: 100%;
+}
+
+#img-caption {}
+
+
+
+
+
+/*content*/
+
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.section {
+    display: flex;
+    /* margin-bottom: 20px; */
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    /* align-items: flex-start; */
+    width: 100%;
+
+
+}
+
+.section:nth-child(2n) {
+    /* order: -1; */
+    flex-direction: row-reverse;
+    /* margin-left: 0; */
+    /* margin-right: 20px; */
+}
+
+.section:nth-child(2n+1) {
+
+    /* margin-left: 0; */
+    /* margin-left: 20px; */
+}
+
+.section p {
+    font-size: 1em;
+    font-family: 'Playfair', "Felipa", serif;
+    /* font-size: 0.7em; */
+    padding: 1em;
+    /* margin:0; */
+}
+
+.section img {
+    max-width: 50%;
+    height: auto;
+    margin: 1em;
+
+}
+
+
+.section p::first-line {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.section p::first-letter {
+    font-size: 2em;
+    font-family: "Caveat", "Geneva", "Tahoma", "sans-serif";
+}
