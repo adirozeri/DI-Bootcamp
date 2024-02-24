@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table Showcase</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label>Favorite Instructor</label>
+
+            <label for="elie">Elie</label>
+            <input type="radio" name="favorite_instructor" id="elie" value="elie">
+            <label for="matt">Matt</label>
+            <input type="radio" name="favorite_instructor" id="matt" value="matt" checked>
+            <label for="tim">Tim</label>
+            <input type="radio" name="favorite_instructor" id="tim" value="tim">
+        </div>
+        <div>
+            <label>Where do you live</label>
+
+            <select name="city">
+                <option value="Paris">Paris</option>
+                <option value="NY">New York</option>
+                <option value="TLV" selected>Tel Aviv</option>
+            </select>
+        </div>
+        <div>
+            <label>Favorite Programming Language(s)</label>
+
+            <label for="ruby">Ruby</label>
+            <input type="checkbox" name="favorite_language1" value="Ruby" id="ruby">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="favorite_language2" value="JavaScript" id="javascript">
+            <label for="python">Python</label>
+            <input type="checkbox" name="favorite_language3" value="Python" id="python">
+        </div>
+        <div>
+            <label>Additional Comments</label>
+            <textarea name="comments" id="com" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="click to submit">
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option value="third option">Option 3</option>
+    </select>
+    <hr>
+
+    <h2>HTML Code Example</h2>
+    <textarea rows="10" cols="50" readonly>
+<!DOCTYPE html>
+<html>                
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+</body>
+</html>
+    </textarea>
+
+
+
+
+
+    <h2>Customer Feedback Form</h2>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+        <label for="subscribe">Subscribe to newsletter</label><br>
+        <input type="radio" id="satisfaction1" name="satisfaction" value="satisfied">
+        <label for="satisfaction1">Satisfied</label><br>
+        <input type="radio" id="satisfaction2" name="satisfaction" value="unsatisfied">
+        <label for="satisfaction2">Unsatisfied</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Monthly Sales Report</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Sales</th>
+                <th>Expenses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$10000</td>
+                <td>$8000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$12000</td>
+                <td>$9000</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$15000</td>
+                <td>$10000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$37000</td>
+                <td>$28000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
+
+
+
+
+
+
+!
