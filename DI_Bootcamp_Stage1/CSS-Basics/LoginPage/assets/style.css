@@ -1,0 +1,88 @@
+* {
+    border: 1px solid black;
+}
+
+.cards-container {
+    position: relative;
+    border: 1px solid red;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container {
+    position: absolute;
+    border: 1px solid blue;
+    height: 400px;
+}
+
+.login-card {
+    transform: translate(-100%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* ////////////////////////////////// */
+.register-card {
+    color: white;
+    transform: translate(-0%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(to left top, purple, black);
+}
+
+.internal-card {
+    width: 80%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+}
+
+.helloicondiv {
+    width: 100%;
+    height: 80px;
+}
+
+.helloicon{
+    scale : 4;
+}
+
+.registerbutton {
+    border: 1px solid white;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 33px;
+}
+
+.registerlink {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hellofriend {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.entteryour{
+    margin-top: 0;
+}
+
+.registerbutton > * {
+    display: inline-block;
+}
+
+.registerbutton :link,
+.registerbutton :visited,
+.registerbutton :hover,
+.registerbutton :active {
+    color: white;
+    text-decoration: none;
+}
