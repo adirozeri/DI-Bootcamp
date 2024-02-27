@@ -1,0 +1,91 @@
+* {
+    border: 1px solid black;
+}
+
+.media {
+    text-align: center;
+}
+
+.catimgcontainer {
+    text-align: center;
+
+}
+
+.cat-img {
+    width: 30%;
+}
+
+
+.catbreeds {
+    background-color: yellow;
+}
+
+div.cat-senses {
+    position: relative;
+    left: 111px;
+
+}
+
+.cat-senses p {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.cat-types-list {
+    list-style: upper-roman;
+}
+
+.compaionship {
+    font-weight: bold;
+}
+
+
+.diff-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.diff-p {
+    width: 100%;
+    /* margin: auto; */
+    /* padding: auto;     */
+    text-align: center;
+    border: 1px solid red;
+    font-weight: bold;
+    color: red;
+}
+
+.table {
+    /* margin: auto; */
+    /* align-self: center; */
+    display: table;
+    /* width: 100%; */
+    /* width: auto; */
+    /* Adjust as necessary */
+    border-spacing: 5px 5px;
+    /* Horizontal and vertical spacing */
+    /* border-collapse: separate; */
+    /* Needed to apply border-spacing */
+}
+
+.table-row {
+    display: table-row;
+}
+
+.body-cell {
+    padding: 1em 0.5em;
+}
+
+.table-cell {
+    display: table-cell;
+    /* Adjust padding as necessary */
+    border: 1px solid black;
+    /* Adjust border style as necessary */
+    /* max-width: fit-content; */
+}
+
+.header-cell {
+    text-align: center;
+    font-weight: bold;
+}

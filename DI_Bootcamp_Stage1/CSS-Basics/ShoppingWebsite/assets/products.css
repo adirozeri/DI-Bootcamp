@@ -1,0 +1,111 @@
+
+
+/* //////////////////////////////////////////////1//////////////////// */
+.cards-container {
+    /* position: relative; */
+    width: 800px;
+    margin: auto;
+    text-align: center; 
+    /* border: 1px solid black; */
+
+}
+
+/* //////////////////////////////////////////2////////// */
+.cards-container .card-container {
+    /* position: relative; */
+    display: inline-block;
+    max-width: 20%;
+    max-height: 100%;
+    /* border: 1px solid red; */
+    width: fit-content;
+
+}
+
+/* ///////////////////////////////////////////3/////////// */
+.cards-container .images-container {
+    /* text-align: center; */
+    /* line-height: 50%; */
+    position: relative;
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+/* ////////////////////////////////////////////3///////////// */
+.cards-container .price-container {
+    /* border: 1px solid blue; */
+    padding: 1em 0 0 0;
+    width: 100%;
+}
+/* ////////////////////////////////////////////3///////////// */
+.cards-container .circle {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 33px;
+    font-size: 0.5em;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+
+.images-container .new-circle {
+    position: absolute;
+    background-color: rgb(22, 160, 133);
+    left: 5px;
+    top: 5px;
+
+    /* transform: translateY(-50%); */
+}
+
+.images-container .dis-circle {
+    position: absolute;
+    background-color: red;
+    right: 5px;
+    top: 5px;
+}
+
+.image {
+    width: 100%;
+}
+/* ////////////////////////////////////////////3///////////// */
+.price-container>* {
+    width: fit-content;
+    margin: auto;
+}
+
+.input-button {
+    /* padding: ; */
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+.price-container :nth-child(1) {
+    padding: 0 0 1em 0;
+
+}
+.price-container :nth-child(2) {
+    display: inline-block;
+    color: rgb(22, 160, 133);
+    font-weight: bold;
+    
+}
+
+.price-container :nth-child(4) {
+    margin: 1em 0 0 0;
+
+}
+
+.price-container :nth-child(2)::before,
+.price-container :nth-child(3)::before {
+    content: "$";
+}
+
+.price-container :nth-child(3) {
+    display: inline-block;
+    font-size: 0.8em;
+    text-decoration: line-through;
+    color: rgb(145, 147, 149);
+    /* font-weight: bold; */
+}
