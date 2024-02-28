@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            /* Adjusted width to ensure wrapping */
+            height: 600px;
+            /* Enough height to demonstrate align-content */
+            align-content: space-around;
+            /* This will now take effect */
+            border: 2px solid black;
+        }
+
+        .item {
+            width: 100px;
+            /* Width of each item */
+            height: 100px;
+            /* Height of each item */
+            background-color: lightcoral;
+            margin: 10px;
+            /* Spacing between items */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+
+</html>

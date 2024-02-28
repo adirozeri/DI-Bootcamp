@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 555px;
+            height: 888px;
+
+            flex-wrap: wrap;
+            /* gap:2em; */
+            align-items: center;
+            /* align-content: space-evenly; */
+            /* justify-content: space-evenly; */
+            justify-items: right;
+            border: 2px solid black;
+        }
+
+        .item1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(173, 230, 222);
+        }
+
+        .item2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(247, 4, 4);
+        }
+
+        .item3 {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(51, 13, 216);
+        }
+
+        .item4 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(205, 207, 46);
+            /* margin: 10px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item1 item">1</div>
+        <div class="item2 item">2</div>
+        <div class="item3 item">3</div>
+        <div class="item4 item">4</div>
+    </div>
+
+</body>
+
+</html>
