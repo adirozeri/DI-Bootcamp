@@ -77,7 +77,7 @@ def hangmanState(hangman_progress):
         print('_|_'     )
 
 # hangmanState(3)
-word = 'abc'
+# word = 's'
 
 i=0
 word_mask='*'*len(word)
@@ -113,9 +113,11 @@ while i<6 and word != word_mask:
     
     print('Word to gurss: {}'.format(word_mask))
 os.system('cls')
-hangmanState(6)
+hangmanState(i)
 print('used letters: {}'.format(letters_used))
-print('game finish.NO LUCK. actual word is \'{}\''.format(word))
+if i==6 :
+    print(f'game finish.NO LUCK. actual word is \'{word}\' you guesed word is: {word_mask}')
+else: print(f'WINNNNNNN!!!!!!!!!!!!!!!!!!!!!!!!!!!!.\n word is \'{word}\'')
 
 
 
