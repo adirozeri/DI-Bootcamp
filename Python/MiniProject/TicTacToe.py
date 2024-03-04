@@ -1,4 +1,4 @@
-
+import os
 upperr = '*'*17
 lower = '*'*17
 gutter = '*  ---|---|---  *'
@@ -44,18 +44,25 @@ def checkWinEnd(xo,pawn):
 def updateBoard(xo,names_dict,player_name):
     coor = str(input('it is {}\'s turn. select x location (format:xy 0-2): '.format(player_name)))
 
+    while not((coor in ['00','01','02','10','11','12','20','21','22']) and (isCoorVacant(xo,*coor))):
+        print('corr not in corret ')
+        coor = str(input('it is {}\'s turn. select x location (format:xy 0-2): '.format(player_name)))
+        
     x=int(coor[0])
     y=int(coor[1])
-
-    while xo[x][y] != ' ':
-        print('location is occupied')
-        coor = str(input('it is {}\'s turn. select x location (format:xy 0-2): '.format(player_name)))
-        x=int(coor[0])
-        y=int(coor[1])
 
     xo[x][y] = names_dict[player_name]
     
     return True
+
+def isCoorVacant(xo,x,y):
+    x=int(x)
+    y=int(y)
+    vacant = xo[x][y] == ' '
+    if vacant: return True
+    print('location is oocupied')
+    return False
+
 
 players=['','']
 players[0] = str(input('X player name: '))
@@ -68,9 +75,11 @@ i=1
 
 while not checkWinEnd(xo,names_dict[players[i]]):
     i = (i+1) % 2
+    
     player_name = players[i]
     pawn = names_dict[players[i]]
-    print('i is {} {} {}'.format(i,player_name,pawn))
+    # print('i is {} player{} {}'.format(i,player_name,pawn))
+    os.system('cls')
     printBoard(xo)
 
     updateBoard(xo,names_dict,player_name)
