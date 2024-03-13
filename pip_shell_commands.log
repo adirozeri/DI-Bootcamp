@@ -1,0 +1,30 @@
+pip show flask
+pipenv install
+pip env shell
+pip install flask-wtf - nice looking flask forms
+pip install wtforms - just to be sure
+pip instal flask-sqlalchemy
+export FLASK_APP = urlshort
+flask run --host=0.0.0.0
+
+pipenv install gunicorn
+gunicorn 'urlshort:create_app()' -b 0.0.0.0
+
+sudo apt install nginx
+systemctl status  nginx
+
+sudo nano /etx/nginx/sites-enabled/default
+--deamon
+
+nano urlshort/urlshort.py
+
+set Flask_APP=__init__.py
+set FLASK_DEBUG=1
+echo %Flask_APP%
+echo %FLASK_DEBUG%
+
+os.urandom(12).hex
+ 
+ python -m flask run 
+ 
+ flask run m
