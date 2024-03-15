@@ -57,3 +57,58 @@ if user_fruit in favorite_fruits:
     print("You chose one of your favorite fruits! Enjoy!")
 else:
     print("You chose a new fruit. I hope you enjoy")
+
+#8
+toppings = []
+price_per_topping = 2.5
+
+while True:
+    topping = input("Enter a pizza topping (type 'quit' to finish): ")
+    if topping == 'quit':
+        break
+    toppings.append(topping)
+    print(f"Adding {topping} to your pizza.")
+
+total_price = 10 + (len(toppings) * price_per_topping)
+print(f"All toppings on the pizza: {', '.join(toppings)}")
+print(f"The total price of the pizza is: ${total_price}")
+
+#e9
+
+
+family_members = int(input("How many people are in your family? "))
+total_cost = 0
+
+for a in range(0,family_members):
+    age = int(input("Enter the age of the family member: "))
+    if age < 3:
+        continue
+    elif age <= 12:
+        total_cost += 10
+    else:
+        total_cost += 15
+
+print(f"The total cost of all tickets is: ${total_cost}")
+
+teenagers = ['a', 'b', 'c', 'd', 'e']
+teenagers_c =teenagers.copy()
+for teen in teenagers:
+    age = int(input(f"Enter {teen}'s age: "))
+    if not(16 <= age <= 21):
+        teenagers_c.remove(teen)
+
+print("Teens allowed to watch the movie:", teenagers_c)
+
+# e10
+sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+
+while "Pastrami sandwich" in sandwich_orders:
+    sandwich_orders.remove("Pastrami sandwich")
+
+finished_sandwiches = []
+
+while sandwich_orders != []:
+    finished_sandwiches.append(sandwich_orders.pop(0))  # Remove the first sandwich from the list
+
+for sandwich in finished_sandwiches:
+    print(f"I made your {sandwich.lower()}")
