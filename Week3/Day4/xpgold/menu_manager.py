@@ -2,12 +2,14 @@ import json
 
 class MenuManager:
         def __init__(self):
-            self.json_file = 'C:\DI_Bootcamp\Week3\day4\restaurant_menu.json'
+            self.json_file = 'Week3/Day4/assets/restaurant_menu.json'
             with open(self.json_file, 'r') as file:
                 self.menu = json.load(file) 
             
         
         def add_item(self, name, price):
+            if not self.menu['items']:
+                 self.menu['items']
             self.menu['items'].append({"name": name, "price": price})
         
         def remove_item(self, name):

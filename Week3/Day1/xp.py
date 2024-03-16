@@ -184,6 +184,6 @@ print(f'get_groups = {ramat_gan_safari.get_groups()}')
 da={}           
 for animal in ramat_gan_safari.animals:
     firstletter=animal[0]
-    da[firstletter]=[animal] daappend(animal)
+    da[firstletter]=[animal].append(animal)
 
 print(f'da is {da}')

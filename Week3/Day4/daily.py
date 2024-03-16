@@ -7,7 +7,7 @@ class Text:
         # word_list = text.replace(' ','\n').replace('\n',' ').splitlines()
         word_list = re.findall(r"\b\w+(?:'\w+)?\b", text)
         self.word_freq = {}
-        for word in word_list:
+        for word in word_list: 
             word = word.lower()
             if word in self.word_freq.keys():
                 self.word_freq.update({word:self.word_freq[word]+1})
@@ -74,7 +74,7 @@ class TextModification(Text):
 
 
 
-file_path = r'C:\DI_Bootcamp\Week3\day4\the_stranger.txt'
+file_path = r'Week3/Day4/assets/the_stranger.txt'
 ta = Text.from_file(file_path)
     
 text = '''
@@ -94,29 +94,6 @@ print(f'unique {ta.unique()}')
 print(f'remove_punct-----------------------\n{ta.remove_punct()}----------------------')
 
 
-
-
-
-
-data structures
-Linked Lists 
-Trees, Tries, & Graphs 
-Stacks & Queues 
-Heaps
-Vectors / ArrayLists
-Hash Tables
-
-Breadth-First Search 
-Depth-First Search 
-Binary Search 
- Merge Sort
- QuickSort
-
-Bit Manipulation
-Memory (Stack vs. Heap)
-Recursion
- Dynamic Programming
- Big 0 Time & Space
 
 
 
