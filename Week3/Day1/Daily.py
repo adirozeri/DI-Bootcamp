@@ -12,7 +12,7 @@ class Farm:
     def get_short_info(self):
         animals_plural = []
         for animal in self.get_animal_types():
-            if self.animals[animal] >1:
+            if self.animals[animal] > 1:
                 animals_plural.append(animal + 's')
             else:
                 animals_plural.append(animal)
@@ -46,3 +46,11 @@ macdonald.add_animal('goat', 12)
 print(macdonald.get_info())
 print(macdonald.get_animal_types())
 print(macdonald.get_short_info())
+
+
+
+    (1 , 'Greg' , 'Jones'),
+    (2 , 'Sandra' , 'Jones'),
+    (3 , 'Scott' , 'Scott'),
+    (4 , 'Trevor' , 'Green'),
+    (5 , 'Melanie' , 'Johnson')

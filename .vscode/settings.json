@@ -1,3 +1,15 @@
 {
-    "livePreview.defaultPreviewPath": "/DI_Bootcamp_Stage1/CSS-Basics/Bootstrap/excercise/index.html"
+    "livePreview.defaultPreviewPath": "/DI_Bootcamp_Stage1/CSS-Basics/Bootstrap/excercise/index.html",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "PostgreSQL 16",
+            "database": "bootcamp",
+            "username": "postgres"
+        }
+    ]
 }
